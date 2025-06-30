@@ -2649,6 +2649,34 @@ Preloader
   width: 50px;
   text-align: center;
 }
+
+.preloader{
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 768px) {
+  #preloader .loader .loader-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+  }
+
+  #preloader .loader .loader-container::before {
+    width: 180px;
+    height: 180px;
+  }
+
+  #preloader .loader .loader-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+  }
+}
+
+
+
 #preloader .loader .loader-icon img {
   animation: loaderpulse alternate 900ms infinite;
   /* width: 40px; */
